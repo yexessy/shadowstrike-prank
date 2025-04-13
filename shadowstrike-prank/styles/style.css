@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  color: #00ff00;
+  font-family: monospace;
+  padding: 20px;
+}
+.header {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.status {
+  color: red;
+  animation: blink 1s step-end infinite;
+}
+.tabs button {
+  background: #111;
+  color: #0f0;
+  border: 1px solid #0f0;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.tab {
+  display: none;
+  margin-top: 10px;
+}
+.tab.active {
+  display: block;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
